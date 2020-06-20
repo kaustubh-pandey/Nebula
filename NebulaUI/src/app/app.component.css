@@ -1,0 +1,20 @@
+.active-cyan-4 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  .active-cyan input[type=text] {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  .active-cyan .fa, .active-cyan-4 .fa {
+    color: #4dd0e1;
+  }
+  .active-cyan-i{
+    color: #4dd0e1;  
+  }
+  .form-control{
+      border-radius: 50px 50px 50px 50px !important;
+      color:#03befc;
+      font-weight: bold;
+      font-size: large;
+  }
