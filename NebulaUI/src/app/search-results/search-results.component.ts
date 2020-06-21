@@ -8,17 +8,19 @@ import { SearchValue } from '../search';
 })
 export class SearchResultsComponent implements OnInit {
   @Input() results : SearchValue[]
-  resultSize : Number
+  @Input() metadata
   p:number = 1
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.metadata = {
+      'count':undefined
+    }
   }
   ngOnChanges(changes:SimpleChanges){
-    for(let change in changes){
-      this.results = changes[change].currentValue;
-      this.resultSize = changes[change].currentValue.length;
+    if(changes){
+      this.results = (changes['results'])?changes['results'].currentValue:'';
+      this.metadata = (changes['metadata'])?changes['metadata'].currentValue:'';
     }
   }
 }

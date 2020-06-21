@@ -1,7 +1,7 @@
 <div class="container-fluid ml-4 p-2" style="width: 100%;">
-    <h6 *ngIf="resultSize" class="text-muted">Fetched {{ resultSize }} results in 0 seconds</h6>
+    <h6 *ngIf="metadata.count" class="text-muted">Fetched {{ metadata.count }} results in {{ metadata.completed_in }} seconds</h6>
     <div class="pb-2" *ngFor="let searchVal of results | paginate: { itemsPerPage: 10, currentPage: p }">
-        <app-result [heading]="searchVal.heading" [content]="searchVal.content"></app-result>
+        <app-result [heading]="searchVal.heading" [content]="searchVal.content" [user]="searchVal.user"></app-result>
     </div>
-    <pagination-controls *ngIf="resultSize" (pageChange)="p = $event"></pagination-controls>
+    <pagination-controls *ngIf="metadata.count" (pageChange)="p = $event"></pagination-controls>
 </div>

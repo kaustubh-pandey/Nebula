@@ -8,6 +8,7 @@ import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 export class ResultComponent implements OnInit {
   @Input() heading:String
   @Input() content:String
+  @Input() user
   constructor() { }
 
   ngOnInit(): void {
@@ -15,5 +16,6 @@ export class ResultComponent implements OnInit {
   ngOnChanges(changes:SimpleChanges){
     this.heading = (changes['heading'])?changes['heading'].currentValue:'';
     this.content = (changes['content'])?changes['content'].currentValue:'';
+    this.user = (changes['user'])?changes['user'].currentValue:'';
   }
 }

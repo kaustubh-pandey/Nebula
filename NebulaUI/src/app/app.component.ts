@@ -10,11 +10,13 @@ import { SearchValue } from './search';
 export class AppComponent {
   title = 'NebulaUI';
   arr: SearchValue[] = []
+  metadata
   constructor(private searchService : SearchService){}
   mclick(val){
-    console.log(val.search);
-    this.searchService.getSearchResults(val.search).subscribe((data:SearchValue[])=>{
-      this.arr = data;
+    this.searchService.getSearchResults(val.search).subscribe((data)=>{
+      console.log(data);
+      this.arr = data['results'];
+      this.metadata = data['metadata'];
     });
   }
 }
