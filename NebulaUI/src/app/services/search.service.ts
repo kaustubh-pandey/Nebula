@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
-import { DATA } from './data';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SearchService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   getSearchResults(query:String){
-    return of(DATA.RESULTS);
+    let postObj = {
+      "query":query
+    };
+    let httpHeaders = new HttpHeaders();
+    let historyOptions = {'headers':httpHeaders,'withCredentials':false}
+    return this.http.post('/api/search',postObj,historyOptions);
   }
 }
