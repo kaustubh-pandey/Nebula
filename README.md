@@ -1,5 +1,14 @@
 # Nebula
 A real time search engine to search tweets using Twitter API.
+
+### Nebula UI 
+
+![NebulaUI](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaUIScreenshot.png)
+
+Supports pagination with 15 results per page
+
+![NebulaPagination](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaPagination.png)
+
 ## Requirements
 ```
 Node >= 10.21.0
@@ -19,7 +28,5 @@ npm start
 Open localhost:3000 in browser
 
 
-### Nebula UI 
 
-![NebulaUI](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaUIScreenshot.png)
 
