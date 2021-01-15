@@ -21,4 +21,5 @@ Open localhost:3000 in browser
 
 ### Nebula UI 
 
-[NebulaUI](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaUIScreenshot.png)
+![NebulaUI](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaUIScreenshot.png)
+
