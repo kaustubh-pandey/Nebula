@@ -27,6 +27,7 @@ Node >= 10.21.0
 npm >= 6.14.4
 Angular >= 9
 ```
+### NOTE : Before build and run, create the token file in NebulaAPI as mentioned here https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaAPI/README.md
 ## To Build and run
 ```
 git clone https://github.com/kaustubh-pandey/Nebula.git
