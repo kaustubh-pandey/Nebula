@@ -2,9 +2,14 @@
   "name": "nebulaapi",
   "version": "1.0.0",
   "description": "NebulaAPI",
+  "bin":"server.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [ "node_modules/**/*", "../NebulaUI/dist/**/*" ],
+    "targets": [ "node14-macos-x64", "node10-win-x64" ]
   },
   "author": "Kaustubh Pandey",
   "license": "ISC",
