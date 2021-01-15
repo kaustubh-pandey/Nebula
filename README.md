@@ -1,5 +1,5 @@
 # Nebula
-A real time search engine to search tweets using Twitter API
+A real time search engine to search tweets using Twitter API.
 ## Requirements
 ```
 Node >= 10.21.0
@@ -17,3 +17,8 @@ npm install
 npm start
 ```
 Open localhost:3000 in browser
+
+
+### Nebula UI 
+
+[NebulaUI](https://github.com/kaustubh-pandey/Nebula/NebulaUIScreenshot.png)
