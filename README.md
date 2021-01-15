@@ -9,6 +9,18 @@ Supports pagination with 10 results per page
 
 ![NebulaPagination](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaPagination.png)
 
+## About
+
+### NebulaUI
+
+NebulaUI uses Angular 9 to show tweets as search results similar to google search user interface
+
+### NebulaAPI
+
+NebulaAPI consumes the TwitterAPI and performs the OAuth1.0 authentication with Twitter Standard API. Since the number of 
+
+requests on Standard API is limited, please check the limits on twitter website. NebulaAPI uses ExpressJS
+
 ## Requirements
 ```
 Node >= 10.21.0
