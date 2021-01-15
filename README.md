@@ -5,7 +5,7 @@ A real time search engine to search tweets using Twitter API.
 
 ![NebulaUI](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaUIScreenshot.png)
 
-Supports pagination with 15 results per page
+Supports pagination with 10 results per page
 
 ![NebulaPagination](https://github.com/kaustubh-pandey/Nebula/blob/master/NebulaPagination.png)
 
